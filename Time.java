@@ -12,5 +12,9 @@ public class Time {
 
       LocalDateTime dateTime = LocalDateTime.now();
       System.out.println("Date and time is: " + dateTime);
+
+      ZoneId id = ZoneId.of("Europe/Bucharest");
+      ZonedDateTime zonedt = ZonedDateTime.now(id);
+      System.out.println(zonedt);
     }
 }
